@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        input {
+            display: block;
+        }
+
+        #main {
+            padding: 50px;
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+        }
+
+        .card {
+            /* display in-line so we don't see extra stuff */
+            max-width: 250px;
+            display: inline-block;
+            margin-top: 40px;
+            border-radius: 10px;
+            padding: 20px;
+            border: 2px solid #555;
+            color: white;
+        }
+
+        .card {
+               transition: 0.3s;
+            }
+
+        .card:hover {
+            transform: scale(1.5);
+        }
+        
+        .profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-bottom: 7px;
+            overflow: hidden;
+        }
+
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card h5 {
+            margin-top: 3px;
+        }
+
+        .card p {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <form action="">
+            <input type="text" placeholder="Profile Pic">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Occupation">
+            <input type="text" placeholder="Info">
+            <input type="submit">
+        </form>
+    </div>
+    <script src="jslearn.js"></script>
+</body>
+</html>
